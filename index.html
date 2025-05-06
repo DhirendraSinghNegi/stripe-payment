@@ -146,7 +146,7 @@
 
             // Send paymentMethod.id + other info to backend
             try {
-                const response = await fetch('http://localhost:7223/api/ProcessPayment', {
+                const response = await fetch('http://192.168.1.109:80/api/payment/ProcessPayment', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({
